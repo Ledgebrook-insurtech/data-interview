@@ -1,0 +1,120 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type:  LEG = Legal 
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account 
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),Claim Number
+40,42,3,X(3),Claim Vendor ID
+43,45,3,9(3),Processing Office
+46,53,8,CCYYMMDD,Suit Date
+54,61,8,CCYYMMDD,Trial Date
+62,65,4,HHMM,Trial Time
+66,73,8,CCYYMMDD,Client Notified Date
+74,81,8,CCYYMMDD,Answer Date 
+82,82,1,X(1),"Extension on Answer Received
+  Y = Yes
+  N = No"
+83,90,8,CCYYMMDD,Response Extension Date
+91,98,8,CCYYMMDD,Motion Date
+99,133,35,X(35),Court Name
+134,148,15,X(15),Docket Number
+149,163,15,X(15),Primary Case Number
+164,164,1,X(1),"Escrow Held
+  Y = Yes
+  N = No"
+165,172,8,S9(5)V99,Escrow Amount
+173,180,8,CCYYMMDD,Date of Attorney Disclosure
+181,181,1,X(1),"In Litigation
+  Y = Yes
+  N = No"
+182,216,35,X(35),Plaintiff's Name
+217,256,40,X(40),Plaintiff's Attorney Name
+257,296,40,X(40),Plaintiff's Attorney Law Firm
+297,326,30,X(30),Plaintiff's Attorney Address 1
+327,356,30,X(30),Plaintiff's Attorney Address 2
+357,381,25,X(25),Plaintiff's Attorney City
+382,383,2,X(2),Plaintiff's Attorney State
+384,398,15,X(15),Plaintiff's Attorney Postal Code
+399,418,20,X(20),Plaintiff's Attorney Country
+419,438,20,X(20),Plaintiff's Attorney County
+439,456,18,X(18),Plaintiff's Attorney Telephone Number
+457,474,18,X(18),Plaintiff's Attorney Facsimile Number
+475,509,35,X(35),Defendant 1 Name
+510,549,40,X(40),Defendant 1 Attorney Name
+550,589,40,X(40),Defendant 1 Attorney Law Firm
+590,619,30,X(30),Defendant 1 Attorney Address 1
+620,649,30,X(30),Defendant 1 Attorney Address 2
+650,674,25,X(25),Defendant 1 Attorney City
+675,676,2,X(2),Defendant 1 Attorney State
+677,691,15,X(15),Defendant 1 Attorney Postal Code
+692,711,20,X(20),Defendant 1 Attorney Country
+712,731,20,X(20),Defendant 1 Attorney County
+732,749,18,X(18),Defendant 1 Attorney Telephone Number
+750,767,18,X(18),Defendant 1 Attorney Facsimile Number
+768,782,15,X(15),Appeal Case Number
+783,790,8,CCYYMMDD,Appeal Due Date
+791,798,8,CCYYMMDD,Appeal Suit Date
+799,806,8,CCYYMMDD,Appeal Trial Date
+807,810,4,HHMM,Appeal Trial Time
+811,818,8,CCYYMMDD,Appeal Notify Date
+819,826,8,CCYYMMDD,Appeal Answer Date
+827,834,8,CCYYMMDD,Appeal Motion Date
+835,840,6,X(6),Appeal Level
+841,849,9,9(9),Plaintiff Attorney FEIN
+850,879,30,X(30),Plaintiff Attorney E-mail
+880,888,9,9(9),Defense Attorney 1 FEIN
+889,918,30,X(30),Defense Attorney 1 E-mail
+919,920,2,X(2),"Lawsuit State
+  See Appendix N"
+921,921,1,X(1),"Litigation Resolved
+  Y = Yes
+  N = No"
+922,923,2,X(2),"Verdict Code
+  AD = Appeal Defense
+  AP = Appeal Plaintiff
+  DA = Defense Won Appeal
+  DJ = Declaratory Judgement
+  DO = Dismissed without Prejudice
+  DP = Dismissed with Prejudice
+  DV = Directed Verdict
+  DW = Defense Won
+  MD = Default Judgement
+  NY = Closed By Board (NY)
+  PA = Plaintiff Won Appeal
+  PW = Plaintiff Won
+  SA = Settled After Mediation
+  SJ = Summary Judgment
+  SP = Settled Prior to Mediation
+  SS = Scheduled for Trial
+  ST = Settled
+  TP = Third Party Takeover
+  VD = Voluntary Dismissal
+  VU = Verdict Under Offer"
+924,931,8,CCYYMMDD,Resolved Date
+932,939,8,CCYYMMDD,Mediation Date
+940,943,4,HHMM,Mediation Time
+944,944,1,X(1),"Punitive Damages
+  Y = Yes
+  N = No"
+945,952,8,CCYYMMDD,Date Placed in Litigation
+953,960,8,CCYYMMDD,Date Reported to Claim Administrator
+961,990,30,X(30),Mediation Result
+991,1020,30,X(30),Trial Result
+1021,1050,30,X(30),Appeal Result
+1051,1051,1,X(1),"Small Claims Court Case
+  Y = Yes
+  N = No"
+1052,1086,35,X(35),Defendant 2
+1087,1095,9,9(9),Defense Attorney 2 FEIN
+1096,1135,40,X(40),Defense Attorney 2 Name
+1136,1175,40,X(40),Defense Attorney 2 Firm
+1176,1205,30,X(30),Defense Attorney 2 Address 1
+1206,1235,30,X(30),Defense Attorney 2 Address 2
+1236,1260,25,X(25),Defense Attorney 2 City
+1261,1262,2,X(2),Defense Attorney 2 State             Appendix N
+1263,1277,15,X(15),Defense Attorney 2 Postal Code
+1278,1295,18,X(18),Defense Attorney 2 Telephone Number
+1296,1303,8,CCYYMMDD,Declaratory Judgement Date
+1304,1304,1,X(1),Filler
+1305,1312,8,CCYYMMDD,Motion for Default Judgement Received Date
+1313,1328,16,X(16),Claim Internal Unique ID 

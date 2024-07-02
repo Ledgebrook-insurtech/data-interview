@@ -1,0 +1,41 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type: LD3 = Liability Detail 3
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),Claim Number 
+40,42,3,X(3),Vendor ID
+43,45,3,9(3),Processing Office
+46,46,1,X(1),"Legal Claimant Name Type: 
+  I  = Individual
+ O = Organization (Last name + First name + MI)  "
+47,71,25,X(25),Legal Claimant Last Name
+72,91,20,X(20),Legal Claimant First Name
+92,92,1,X(1),Legal Claimant Middle Initial
+93,122,30,X(30),Legal Claimant Address Line 1
+123,152,30,X(30),Legal Claimant Address Line 2
+153,177,25,X(25),Legal Claimant City
+178,179,2,X(2),Legal Claimant State
+180,194,15,X(15),Legal Claimant Postal Code
+195,197,3,X(3),Legal Claimant Country 
+198,205,8,X(8),Treatment Procedure
+206,213,8,X(8),Admitting Department
+214,221,8,X(8),Contributing Factor 1
+222,229,8,X(8),Contributing Factor 2
+230,237,8,X(8),Medication Category
+238,297,60,X(60),Medication Name
+298,305,8,X(8),Device Type
+306,313,8,X(8),Co Morbidities 1
+314,321,8,X(8),Co Morbidities 2
+322,329,8,X(8),Co Morbidities 3
+330,337,8,X(8),IR Tracking
+338,345,8,CCYYMMDD,Investigation Date
+346,353,8,X(8),Medical Insurance
+354,361,8,X(8),PF Custom Field 1 Code
+362,421,60,X(60),PF Custom Field 1 Desc
+422,429,8,X(8),PF Custom Field 2 Code
+430,489,60,X(60),PF Custom Field 2 Desc
+490,497,8,X(8),PF Custom Field 3 Code
+498,557,60,X(60),PF Custom Field 3 Desc
+558,617,60,X(60),PF Custom Field 4
+618,633,16,X(16),Claim Internal Unique ID 

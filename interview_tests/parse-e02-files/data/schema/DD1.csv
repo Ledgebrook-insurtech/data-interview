@@ -1,0 +1,65 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type: DD1 = Disability Detail 
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),Claim Number 
+40,42,3,X(3),Vendor ID
+43,45,3,9(3),Processing Office
+46,46,1,9(1),"Disability Due To
+  0 = Unknown
+  1 = Injury
+  2 = Illness
+  3 = Pregnancy"
+47,54,8,CCYYMMDD,Benefit Approval From Date
+55,62,8,CCYYMMDD,Benefit Approval Through Date
+63,63,1,9(1),"Initial Treatment:
+  0 = Unknown (no value assigned)
+  1 = No Medical Treatment
+  2 = Minor on-site remedies by employer
+  3 = Minor clinic/hospital medical remedies
+        and diagnostic testing
+  4 = Emergency evaluation, diagnostic testing,
+         and medical procedures
+  5 = Hospitalization >24 hours
+  6 = Future major medical/lost time anticipated"
+64,69,6,X(6),Filler
+70,75,6,X(6),Filler
+76,81,6,X(6),Filler
+82,87,6,X(6),Filler
+88,93,6,X(6),Filler
+94,94,1,9(1),"Surgery Indicator:
+  1 = Yes
+  2 = No"
+95,95,1,9(1),"Method of Settlement:
+  0 = Claim subject to settlement
+  1 = Non-Payment Status
+  2 = Disputed/Compromise
+  3 = Known Liability
+  4 = Lawsuit"
+96,103,8,CCYYMMDD,Settlement Date
+104,111,8,CCYYMMDD,Date of Termination
+112,119,8,CCYYMMDD,Date Disability Began
+120,126,7,S9(4)V99,Base Pay - Hourly
+127,134,8,S9(5)V99,Base Pay - Weekly
+135,143,9,S9(6)V99,Base Pay - Monthly
+144,154,11,S9(8)V99,Base Pay - Annually
+155,162,8,CCYYMMDD,Change in Definition Date
+163,170,8,CCYYMMDD,Change in Definition Completion Date
+171,178,8,CCYYMMDD,Date Release of Information Sent
+179,186,8,CCYYMMDD,Date Release of Information Received
+187,194,8,CCYYMMDD,Date Overpayment Agreement Sent
+195,202,8,CCYYMMDD,Date Overpayment Agreement Received
+203,205,3,9(3),Optimum Disability Duration
+206,208,3,9(3),Maximum Disability Duration
+209,210,2,X(2),ICD Code Version Indicator [1] (Primary)
+211,218,8,X(8),ICD Code [1] (Primary)
+219,220,2,X(2),ICD Code Version Indicator [2]
+221,228,8,X(8),ICD Code [2] 
+229,230,2,X(2),ICD Code Version Indicator [3]
+231,238,8,X(8),ICD Code [3] 
+239,240,2,X(2),ICD Code Version Indicator [4]
+241,248,8,X(8),ICD Code [4] 
+249,250,2,X(2),ICD Code Version Indicator [5]
+251,258,8,X(8),ICD Code [5] 
+259,274,16,X(16),Claim Internal Unique ID 

@@ -1,0 +1,306 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type:  CLM = Claim 
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account 
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),"Claim Number 
+  (Unique ID = Claim Number + Vendor ID + Processing Office)"
+40,42,3,X(3),Claim Vendor ID (originator of claim number)
+43,45,3,9(3),Processing Office
+46,47,2,X(2),"Line Type:
+  WC = Workers Comp
+  DS  = Disability      
+  GL  = General Liability
+  AU  = Auto Liability
+  PR  = Property
+  PF = Professional Liability"
+48,55,8,CCYYMMDD,Date of Loss
+56,59,4,HHMM,Time of Loss
+60,109,50,X(50),Description of Event
+110,189,80,X(80),Description of Loss
+190,191,2,X(2),"Claim Type:
+  "" ""  = AU, GL, PR, DS, PF claims that are not Incidents (Report only)                                              
+  EL = Employers Liability
+  MO= WC Medical Only
+  IN = WC Indemnity
+  IO = Incident (Report only) - regardless of line type"
+192,193,2,X(2),Claim Subtype  (Appendix T)
+194,194,1,X(1),"Claim Status:
+  O  = Open
+  C  = Closed
+  I   = Incident Report
+  L  = Deleted
+  R  = Reopened"
+195,195,1,X(1),"Claim Sub status:
+  A = Accepted                                                                    
+  C = Compromised
+  F = Deferred
+  D = Denied                                                                        
+  J = JURIS Admin.(DS/WC Only)                          
+  P = Pending  
+  R = Reinstated (DS Only)
+  S = Suspended (DS Only)
+  T = Terminated (DS Only)
+  "" "" = Incident  "
+196,203,8,CCYYMMDD,Date Reported to Client
+204,211,8,CCYYMMDD,Date Reported to CMS
+212,219,8,CCYYMMDD,Date Opened
+220,227,8,CCYYMMDD,Date Closed
+228,235,8,CCYYMMDD,Date Reopened
+236,237,2,X(2),State of Employment/Premium   (Appendix N)
+238,239,2,X(2),State of Accident     (Appendix N)
+240,241,2,9(2),State of Jurisdiction     (Appendix N)
+242,245,4,9(4),Source Code     (Appendix A)
+246,249,4,9(4),Cause Code      (Appendix B)
+250,253,4,9(4),Nature/Result Code     (Appendix C)
+254,257,4,9(4),Part/Target Code     (Appendix D)
+258,261,4,9(4),Site Code     (Client Defined)
+262,291,30,X(30),Loss Location Street
+292,316,25,X(25),Loss Location City
+317,331,15,X(15),Loss Location Postal Code
+332,332,1,X(1),"Claimant/Insured Name Type: 
+  I  = Individual
+ O = Organization (Last name + First name + MI)  "
+333,357,25,X(25),Claimant/Insured Last Name
+358,377,20,X(20),Claimant/Insured First Name
+378,378,1,X(1),Claimant/Insured Middle Initial
+379,408,30,X(30),Claimant/Insured Address Line 1
+409,438,30,X(30),Claimant/Insured Address Line 2
+439,468,30,X(30),Claimant/Insured City
+469,470,2,X(2),Claimant/Insured State
+471,485,15,X(15),Claimant/Insured Postal Code
+486,505,20,X(20),Claimant Country 
+506,514,9,X(9),Claimant SSN
+515,517,3,9(3),Claimant Age
+518,525,8,CCYYMMDD,Date of Birth
+526,533,8,CCYYMMDD,Date of Death
+534,535,2,9(2),Number of Dependents
+536,536,1,9(1),"Marital Status:
+  1 = Single, Divorced, Widowed
+  2 = Married
+  3 = Separated
+  4 = Unknown"
+537,537,1,9(1),"Gender: 
+  1 = Male
+  2 = Female
+  3 = Unknown"
+538,545,8,CCYYMMDD,Date of Hire
+546,551,6,YYMMDD,Length of Service
+552,553,2,X(2),Filler
+554,568,15,X(15),State Assigned Claim Number
+569,572,4,9(4),Job Classification Code
+573,587,15,X(15),Occupation
+588,602,15,X(15),Department
+603,627,25,X(25),Supervisor
+628,631,4,9(4),Union ID
+632,638,7,S9(4)V99,Average Weekly Wage
+639,642,4,9(4),Filler
+643,646,4,9(4),Number of Lost Days
+647,654,8,CCYYMMDD,Last Day Worked (Latest)
+655,662,8,CCYYMMDD,Date Return to Work-Restricted Duty (Latest)
+663,670,8,CCYYMMDD,Date Return to Work-Full Duty (Latest)
+671,672,2,X(2),"Line of Coverage     (Can be defined by Client, but Sedgwick defaults are defined in Appendix W)"
+673,674,2,X(2),"Coverage     (Can be defined by Client, but Sedgwick defaults are defined in Appendix W)"
+675,675,1,X(1),"Program Type:
+  I  = Insured
+ S = Self-Insured"
+676,676,1,X(1),"Policy Type:
+  P = Primary
+  E = Excess"
+677,682,6,X(6),Carrier ID     (Appendix M)
+683,700,18,X(18),Filler
+701,708,8,CCYYMMDD,Policy Effective Date
+709,716,8,CCYYMMDD,Policy Expiration Date
+717,717,1,X(1),"Claim Made Indicator:
+  Y = Yes
+  N = No"
+718,725,8,CCYYMMDD,Claim Made Date
+726,733,8,CCYYMMDD,Claim Made Retroactive Date
+734,741,8,CCYYMMDD,Claim Made Tail Date
+742,749,8,S9(7),SIR/Deductible 
+750,759,10,S9(7)V99,Deductible Applied
+760,761,2,9(2),"Filler - FIELD NO LONGER UPDATEABLE IN THE CLAIM SYSTEM
+fomerly - Major Injury Indicator (WC Only)"
+762,762,1,X(1),"Excess Indicator:
+  Y = Yes
+  N = No"
+763,763,1,X(1),"Subrogation Indicator:
+  Y = Yes
+  N = No"
+764,764,1,X(1),"Rehabilitation Indicator:
+  Y = Yes
+  N = No"
+765,765,1,X(1),"Apportionment Indicator:
+  Y = Yes
+  N = No"
+766,768,3,9(3),Percent of Apportionment
+769,769,1,X(1),"Hospitalization Indicator:
+  Y = Yes
+  N = No"
+770,770,1,X(1),"Suit/Legal Indicator
+  Y = Yes
+  N = No"
+771,778,8,CCYYMMDD,Date Suit Filed
+779,779,1,X(1),"OSHA Reportable Indicator:
+  Y = Yes
+  N = No"
+780,783,4,9(4),"Filler - formerly ""Safety Reportable Days"""
+784,787,4,9(4),"Filler - formerly ""Safety Restricted Days"""
+788,788,1,9(1),"OSHA Accident/Illness Code (WC Only):
+  Prior to 1/1/2004:
+  1 = Injury  
+  2 = Skin Disorder                                                                   
+  3 = Respiratory Condition
+  4 = Poisoning
+  5 = All other Illnesses
+  1/1/2004 forward:
+  1 = Injury                               
+  2 = Skin Disorder
+  3 = Respiratory Condition              
+  4 = Poisoning                                                   
+  5 = Hearing Loss                                 
+  6 = All Other Illnesses "
+789,805,17,X(17),Vehicle Identification Number
+806,817,12,X(12),Vehicle Make
+818,829,12,X(12),Vehicle Model
+830,833,4,9(4),Vehicle Year
+834,863,30,X(30),Loss Payee
+864,893,30,X(30),Driver Name
+894,896,3,9(3),Driver Age (calculated from Date of Birth)
+897,897,1,X(1),"Driver Gender:
+  M = Male
+  F = Female
+  U = Unknown"
+898,898,1,X(1),"Driver Chargeable
+  Y = Yes
+  N = No
+  U = Unknown"
+899,928,30,X(30),Product Name
+929,936,8,CCYYMMDD,Date of Last Action (Other than inquiry)
+937,944,8,X(8),Examiner
+945,945,1,X(1),"Converted Claim Indicator (from other TPA)
+  Y = Yes
+  N = No"
+946,947,2,X(2),"Paid/Incurred Category-AU,GL,PR     (Appendix E)"
+948,959,12,S9(9)V99,Paid to Date-Indemnity/Loss 
+960,971,12,S9(9)V99,Paid to Date-Medical  (WC/DS Only)
+972,983,12,S9(9)V99,Paid to Date-Other Expense  (WC Only)
+984,995,12,S9(9)V99,Paid to Date-Expense  
+996,1007,12,S9(9)V99,Paid Current Period-Indemnity/Loss 
+1008,1019,12,S9(9)V99,Paid Current Period-Medical  (WC/DS Only)
+1020,1031,12,S9(9)V99,Paid Current Period-Other Expense  (WC Only)
+1032,1043,12,S9(9)V99,Paid Current Period-Expense 
+1044,1055,12,S9(9)V99,Incurred-Indemnity/Loss 
+1056,1067,12,S9(9)V99,Incurred-Medical  (WC/DS Only)
+1068,1079,12,S9(9)V99,Incurred-Other Expense  (WC Only)
+1080,1091,12,S9(9)V99,Incurred-Expense
+1092,1103,12,S9(9)V99,Change in Reserve-Indemnity/Loss
+1104,1115,12,S9(9)V99,Change in Reserve-Medical  (WC/DS Only)
+1116,1127,12,S9(9)V99,Change in Reserve-Other Expense  (WC Only)
+1128,1139,12,S9(9)V99,Change in Reserve-Expense
+1140,1151,12,S9(9)V99,Recovered to Date-Indemnity/Loss 
+1152,1163,12,S9(9)V99,Recovered to Date-Medical  (WC/DS Only)
+1164,1175,12,S9(9)V99,Recovered to Date-Other Expense  (WC Only)
+1176,1187,12,S9(9)V99,Recovered to Date-Expense
+1188,1197,10,X(10),Event Number
+1198,1202,5,9(5),Suffix Number
+1203,1203,1,X(1),Carrier Change Status
+1204,1211,8,CCYYMMDD,Date Created
+1212,1214,3,999,Examiner Office  (Appendix R)
+1215,1215,1,X(1),"Part of Body Side
+  A = Anterior
+  L = Left
+  P = Posterior
+  R = Right  "
+1216,1233,18,X(18),Claimant Telephone Number
+1234,1241,8,CCYYMMDD,Date of Claimant Contact
+1242,1257,16,X(16),Claim Internal Unique ID 
+1258,1272,15,X(15),"Employee Unique ID (This is the Employee Unique Number of the claimant.  While sometimes true, this is not typically the employee's id in the client's HR/payroll system.  If specifically requested, we have the ability to send the client's employee ID, but only if the client provides an HR feed.)"
+1273,1273,1,X(1),"Claimant Medicare Beneficiary Status
+  Y = Yes
+  U = Unknown
+  N = Not Checked"
+1274,1285,12,X(12),Claimant Health Insurance Claim Number (HICN)
+1286,1289,4,9999,Plan Number
+1290,1293,4,9999,Line Number
+1294,1343,50,X(50),Location-Node (Utilized by SRS as Billing Code)
+1344,1365,22,X(22),Policy Number
+1366,1685,320,X(320),Examiner's Email Address
+1686,1686,1,X(1),"Tender Flag 
+  Y = Yes
+  N = No"
+1687,1704,18,X(18),Claimant Work Phone
+1705,1708,4,X(4),Claimant Work Extension
+1709,1748,40,X(40),Loss Organization
+1749,1768,20,X(20),Loss County
+1769,1770,2,X(2),"Claimant Medical Accommodation Code (Canadian Claims)
+   1 = Negligence
+   2 = Nuisance
+   3 = Contractual Liability
+   4 = Other Vicarious Liability
+   5 = Strict Liability
+   6 = Voluntary Payments
+
+Claimant Medical Facility Code (non-Canadian liability claims)
+  H = In Hospital Treatment
+  E = Emergency/Outpatient
+  D = Doctor's Office
+  N = Nursing Homes
+  R = Rehabilitation Facility
+  X = Medicare
+  Y = Medicaid
+  Z = Neither Medicare or Medicaid"
+1771,1772,2,9(2),"Claimant Occupation Code
+  0 = Preschool child    
+  1 = Student                
+  2 = Housewife           
+  3 = Part-time              
+  4 = Professional-technical
+  5 = Skilled, semi-skilled
+  6 = Non-skilled
+  7 = Unemployed
+  8 = Retired
+  9 = Other"
+1773,1773,1,X(1),"Coinsurance Flag
+  Y = Yes
+  N = No"
+1774,1782,9,S9(6)V99,Coinsurance Limit
+1783,1784,2,99,Coinsurance Percent
+1785,1792,8,CCYYMMDD,Date Policy Limit Demand Received
+1793,1793,1,X(1),"Latent Group Indicator
+  Y = Yes
+  N = No"
+1794,1796,3,X(3),Union Code (This data element only applies to workers comp and disability claims.  It is only available if sent to Sedgwick in a feed from the client.)
+1797,1800,4,X(4),Union Local (This data element only applies to workers comp and disability claims.  It is only available if sent to Sedgwick in a feed from the client.)
+1801,1802,2,X(2),Sub Class Code (WC WA Jurisdiction Only)
+1803,1814,12,S9(9)V99,Paid to Date-Unallocated Expense
+1815,1826,12,S9(9)V99,Paid Current Period-Unallocated Expense
+1827,1838,12,S9(9)V99,Incurred-Unallocated Expense
+1839,1850,12,S9(9)V99,Change in Reserve-Unallocated Expense
+1851,1851,1,X(1),"Claim Reported to Carrier
+  Y = Yes
+  N = No"
+1852,1859,8,CCYYMMDD,Date Claim Reported to Carrier
+1860,1861,2,X(2),"Claimant’s role or Relationship on the Claim
+   CI - Both Claimant and Insured
+   CL - Claimant
+   CD - Claimant Driver
+   CE - Claimant Pedestrian
+   CP - Claimant Passenger
+   GM - Guardian of Minor
+   IE - Insured Employee
+   ID - Insured Driver
+   IN - Insured
+   IP - Insured Passenger
+   OW - Owner
+   PT - Partner
+   TN - Tenant
+   WT - Witness"
+1862,1873,12,S9(9)V99,Net Incurred
+1874,1880,7,X(7),Deduction Confirm
+1881,1883,3,X(3),Include Expense
+1884,1894,11,9(9)V99,Deduction Amount
+1895,1944,50,X(50),Examiner's Full Name
+1945,1994,50,X(50),Examiner's Supervisor's Full Name
+1995,2314,320,X(320),Examiner's Supervisor's Email
+2315,2322,8,X(8),Examiner's Supervisor's Alias/Username

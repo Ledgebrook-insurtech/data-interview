@@ -1,0 +1,10 @@
+services:
+  parse-e02-files:
+    image: ${BUILD_IMAGE_URL}
+    build:
+      context: ../../
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+    env_file:
+      - .env

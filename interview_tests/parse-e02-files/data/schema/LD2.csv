@@ -1,0 +1,50 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type: LD2 = Liability Detail 2
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),Claim Number 
+40,42,3,X(3),Vendor ID
+43,45,3,9(3),Processing Office
+46,60,15,X(15),Third Party Insurance Company
+61,78,18,X(18),Third Party Insurance Policy Number
+79,118,40,X(40),Third Party Drivers Name
+119,148,30,X(30),Third Party Drivers Address 1
+149,178,30,X(30),Third Party Drivers Address 2
+179,203,25,X(25),Third Party Drivers City
+204,205,2,X(2),Third Party Drivers State
+206,220,15,X(15),Third Party Drivers Postal Code
+221,238,18,X(18),Third Party Drivers Home Phone
+239,256,18,X(18),Third Party Drivers Work Phone
+257,260,4,9(4),Third Party Vehicle Year
+261,270,10,X(10),Third Party Vehicle Make
+271,290,20,X(20),Third Party Vehicle Model
+291,300,10,X(10),Third Party Vehicle Plate Number
+301,302,2,X(2),Third Party Vehicle Plate State
+303,322,20,X(20),Third Party Vehicle VIN
+323,352,30,X(30),Third Party Vehicle Damage Description
+353,377,25,X(25),Third Party Vehicle Claim Number
+378,397,20,X(20),Third Party Vehicle Driver's License Number
+398,398,1,X(1),"Third Party Vehicle Citation Issued?
+Y = Yes
+N = No"
+399,423,25,X(25),Third Party Vehicle Driver Citation Number
+424,424,1,X(1),"Third Party Vehicle Driver Wearing Seatbelt?
+Y = Yes
+N = No"
+425,454,30,X(30),Third Party Vehicle Driver Injury Description (all injuries)
+455,455,1,X(1),"Third Party Vehicle Driver owns vehicle?
+Y = Yes
+N = No"
+456,456,1,X(1),"Third Party Vehicle Did passenger seek medical attention?
+Y = Yes
+N = No"
+457,458,2,9(2),"Auto Description - 3rd Party
+1=Passenger Car
+2=Van
+3=SUV
+4=Pickup Truck
+5=Tractor/Trailer
+6=Motorcycle
+7=Other"
+459,474,16,X(16),Claim Internal Unique ID 
