@@ -8,14 +8,13 @@ def main():
     """
 
     try:
-        
+
         e02 = ParseE02()
-        e02.load_schema()
-        e02.load_e02_file()
+        breakpoint()
 
     except Exception as error: # pylint: disable=broad-exception-caught
         print(f"Exception occurred: {error}")
-        
+
         sys.exit(1)  # Exit with error if any exceptions are caught
 
 
