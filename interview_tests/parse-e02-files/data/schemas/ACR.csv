@@ -1,0 +1,19 @@
+start,stop,length,format,description
+1,3,3,X(3),"Record Type:  
+   ACR = 3rd Party Deductible Receivable     "
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account 
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),Claim Number
+40,42,3,X(3),Claim Vendor ID
+43,45,3,9(3),Processing Office
+46,51,6,X(6),"Responsible Party
+  Member
+  Pool"
+52,59,8,CCYYMMDD,Date Entered
+60,71,12,S9(9)V99,Amount Owed
+72,79,8,CCYYMMDD,Date Received
+80,91,12,S9(9)V99,Amount Paid
+92,103,12,S9(9)V99,Amount Written Off
+104,119,16,X(16),Deductible Internal Unique ID
+120,135,16,X(16),Claim Internal Unique ID 

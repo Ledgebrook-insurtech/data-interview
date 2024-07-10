@@ -1,0 +1,27 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type:  REI = Reimbursement Allocations
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account 
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),Claim Number
+40,42,3,X(3),Claim Vendor ID
+43,45,3,9(3),Processing Office
+46,61,16,X(16),Internal Unique Identifier-Header
+62,67,6,X(6),Carrier Code
+68,87,20,X(20),Document Number
+88,88,1,X(1),Document Type ((C)heck or (W)ire)
+89,100,12,S9(9)V99,Amount of the Document
+101,108,8,CCYYMMDD,Document Date
+109,116,8,CCYYMMDD,Date Created
+117,176,60,X(60),Comments
+177,192,16,X(16),Internal Unique Identifier-Detail
+193,193,1,X(1),"Reimbursement Type (I=Indemnity, M=Medical, E=Expense)"
+194,199,6,9(6),Sequence
+200,214,15,X(15),Bank Account
+215,222,8,CCYYMMDD,Date Entered
+223,230,8,CCYYMMDD,Reimbursement From Date
+231,238,8,CCYYMMDD,Reimbursement To Date
+239,250,12,S9(9)V99,Amount of the Reimbursement
+251,251,1,X(1),Claim-only flag
+252,311,60,X(60),Comments
+312,327,16,X(16),Claim Internal Unique ID 

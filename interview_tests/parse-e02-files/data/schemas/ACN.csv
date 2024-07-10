@@ -1,0 +1,49 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type:  ACN = Alternate Claim Number
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account 
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),Claim Number 
+40,42,3,X(3),Claim Vendor ID (originator of claim number)
+43,45,3,X(3),Processing Office
+46,65,20,X(20),Alternate Type #1 (Appendix S)
+66,95,30,X(30),Alternate Number #1
+96,115,20,X(20),Alternate Type #2 (Appendix S)
+116,145,30,X(30),Alternate Number #2
+146,165,20,X(20),Alternate Type #3 (Appendix S)
+166,195,30,X(30),Alternate Number #3
+196,215,20,X(20),Alternate Type #4 (Appendix S)
+216,245,30,X(30),Alternate Number #4
+246,265,20,X(20),Alternate Type #5 (Appendix S)
+266,295,30,X(30),Alternate Number #5
+296,315,20,X(20),Alternate Type #6 (Appendix S)
+316,345,30,X(30),Alternate Number #6
+346,365,20,X(20),Alternate Type #7 (Appendix S)
+366,395,30,X(30),Alternate Number #7
+396,415,20,X(20),Alternate Type #8 (Appendix S)
+416,445,30,X(30),Alternate Number #8
+446,465,20,X(20),Alternate Type #9 (Appendix S)
+466,495,30,X(30),Alternate Number #9
+496,515,20,X(20),Alternate Type #10 (Appendix S)
+516,545,30,X(30),Alternate Number #10
+546,565,20,X(20),Alternate Type #11 (Appendix S)
+566,595,30,X(30),Alternate Number #11
+596,615,20,X(20),Alternate Type #12 (Appendix S)
+616,645,30,X(30),Alternate Number #12
+646,665,20,X(20),Alternate Type #13 (Appendix S)
+666,695,30,X(30),Alternate Number #13
+696,715,20,X(20),Alternate Type #14 (Appendix S)
+716,745,30,X(30),Alternate Number #14
+746,765,20,X(20),Alternate Type #15 (Appendix S)
+766,795,30,X(30),Alternate Number #15
+796,815,20,X(20),Alternate Type #16 (Appendix S)
+816,845,30,X(30),Alternate Number #16
+846,865,20,X(20),Alternate Type #17 (Appendix S)
+866,895,30,X(30),Alternate Number #17
+896,915,20,X(20),Alternate Type #18 (Appendix S)
+916,945,30,X(30),Alternate Number #18
+946,965,20,X(20),Alternate Type #19 (Appendix S)
+966,995,30,X(30),Alternate Number #19
+996,1015,20,X(20),Alternate Type #20 (Appendix S)
+1016,1045,30,X(30),Alternate Number #20
+1046,1061,16,X(16),Claim Internal Unique ID 

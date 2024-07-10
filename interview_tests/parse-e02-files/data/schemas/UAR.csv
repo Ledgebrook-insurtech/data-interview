@@ -1,0 +1,27 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type:  UAR = Reserve 
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account 
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),Claim Number
+40,42,3,X(3),Claim Vendor ID
+43,45,3,9(3),Processing Office
+46,46,1,X(1),"Reserve Change Indicator
+  Y = Yes, reserve changed during requested period
+  N = No reserve change"
+47,54,8,CCYYMMDD,Reserve Date
+55,134,80,X(80),Comment
+135,146,12,S9(9)V99,Total Unallocated Expense Incurred
+147,158,12,S9(9)V99,Change in Total Unallocated Expense Incurred
+159,170,12,S9(9)V99,Unallocated TPA Fees Incurred
+171,182,12,S9(9)V99,Change in Unallocated TPA Fees Incurred
+183,194,12,S9(9)V99,Unallocated Adjuster Fee Incurred
+195,206,12,S9(9)V99,Change in Unallocated Adjuster Fee Incurred
+207,218,12,S9(9)V99,Unallocated Attorney Coverage Fees Incurred
+219,230,12,S9(9)V99,Change in Unallocated Attorney Coverage Fees Incurred
+231,242,12,S9(9)V99,Unallocated Defense Fees Incurred
+243,254,12,S9(9)V99,Change in Unallocated Defense Fees Incurred
+255,266,12,S9(9)V99,Unallocated Expert Fees Incurred
+267,278,12,S9(9)V99,Change in Unallocated Expert Fees Incurred
+279,294,16,X(16),Claim Internal Unique ID 
+295,310,16,X(16),Reserve Unique ID 

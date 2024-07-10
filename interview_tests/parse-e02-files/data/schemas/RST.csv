@@ -1,0 +1,24 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type: RST= Restrictions
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),Claim Number
+40,42,3,X(3),Vendor ID
+43,45,3,9(3),Processing Office
+46,53,8,CCYYMMDD,Restriction Beginning Date
+54,61,8,CCYYMMDD,Restriction Ending Date
+62,69,8,CCYYMMDD,Recommended Beginning Date
+70,77,8,CCYYMMDD,Recommended Ending Date
+78,87,10,X(10),"Restriction Type
+  Temporary
+  Permanent"
+88,95,8,CCYYMMDD,Date Accepted by Client
+96,125,30,X(30),"Restriction
+   (Appendix Q for Sedgwick defined values)
+   Can be customized by client"
+126,145,20,X(20),"Restriction Category
+  (Appendix Q for Sedgwick defined categories)
+  Can be customized by client"
+146,161,16,X(16),Restriction Detail Internal Unique ID
+162,177,16,X(16),Claim Internal Unique ID 

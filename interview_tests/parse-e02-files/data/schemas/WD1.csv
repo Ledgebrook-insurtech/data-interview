@@ -1,0 +1,303 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type:  WD1 = WC Detail 1 (NCCI)
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account 
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),Claim Number
+40,42,3,X(3),Claim Vendor ID
+43,45,3,9(3),Processing Office
+46,54,9,X(9),Employer FEIN
+55,58,4,9(4),SIC
+59,59,1,9(1),"Employer Payroll
+  1 = $0
+  2 = $1 - $100,000                            
+  3 = $100,001 - $1,000,000                            
+  4 = $1,000,001 - $10,000,000                            
+  5 = over $10,000,000                            
+  9 = not provided"
+60,60,1,9(1),"Claim Status
+  1 = Open
+  2 = Closed
+  3 = Reopened"
+61,61,1,X(1),"Employment Status
+  1 - Regular
+  2 - Part Time
+  3 - Unemployed  
+  4 - On Strike
+  5 - Disabled  
+  6 - Retired   
+  7 - Other   (N/A:  CA,DE,MA,NJ,NY,PA)
+  8 - Seasonal Worker  -- or --
+       Unemployed-work force reduction, plant
+       shutdown/closing (CA.DE,MA,NJ,PA only)   
+  9 - Volunteer Worker -- or -- 
+       Other (CA,DE,MA,NJ,NY,PA only)
+  A - Apprenticeship Full Time
+  B - Apprenticeship Part Time
+  C - Pieceworker
+  D - Terminated"
+62,63,2,9(2),Loss Coverage Code   (Appendix F)
+64,73,10,9(10),"Loss Conditions Code  (Appendix G)
+  Position 1-2   = Act
+  Position 3-4   = Type of Loss
+  Position 5-6   = Type of Recovery
+  Position 7-8   = Type of Coverage
+  Position 9-10 = Type of Settlement"
+74,74,1,9(1),"Method of Determining Weekly Wage
+  1 - Actual
+  2 - Estimated
+  3 - Minimum Weekly Benefit
+  4 - Maximum Weekly Benefit"
+75,82,8,S9(5)V99,Other Weekly Payments
+83,83,1,9(1),"Surgery Indicator
+  1 = Yes
+  2 = No"
+84,91,8,CCYYMMDD,Date of First Payment
+92,99,8,CCYYMMDD,Date Disability Began
+100,107,8,CCYYMMDD,Date Return to Work (Original)
+108,108,1,9(1),Injury Code (single digit values)
+109,118,10,S9(7)V99,Total Incurred Indemnity (Net of  SIF/Subro)
+119,120,2,9(2),Benefit Type [1]   (Appendix H)
+121,130,10,S9(7)V99,Benefit Paid To Date [1]
+131,137,7,S9(4)V99,Benefit Weekly Rate [1]
+138,139,2,9(2),Benefit Type [2]
+140,149,10,S9(7)V99,Benefit Paid To Date [2]
+150,156,7,S9(4)V99,Benefit Weekly Rate [2]
+157,158,2,9(2),Benefit Type [3]
+159,168,10,S9(7)V99,Benefit Paid To Date [3]
+169,175,7,S9(4)V99,Benefit Weekly Rate [3]
+176,177,2,9(2),Benefit Type [4]
+178,187,10,S9(7)V99,Benefit Paid To Date [4]
+188,194,7,S9(4)V99,Benefit Weekly Rate [4]
+195,196,2,9(2),Benefit Type [5]
+197,206,10,S9(7)V99,Benefit Paid To Date [5]
+207,213,7,S9(4)V99,Benefit Weekly Rate [5]
+214,223,10,S9(7)V99,Total Incurred Voc Rehab
+224,233,10,S9(7)V99,Voc Rehab Evaluation Expense Paid to Date
+234,243,10,S9(7)V99,Voc Rehab Maintenance Paid to Date
+244,253,10,S9(7)V99,Voc Rehab Education Expense Paid to Date
+254,263,10,S9(7)V99,Voc Rehab Other Expense Paid to Date
+264,273,10,S9(7)V99,Total Incurred for Medical
+274,283,10,S9(7)V99,Hospital Costs Paid to Date
+284,293,10,S9(7)V99,Physician Costs Paid to Date
+294,303,10,S9(7)V99,Other Medical Costs Paid to Date
+304,311,8,S9(5)V99,Post Injury Weekly Wage
+312,314,3,9(3),Percent of Impairment
+315,322,8,CCYYMMDD,Date of Maximum Medical Improvement
+323,332,10,S9(7)V99,Funeral Expenses Paid to Date
+333,342,10,S9(7)V99,Lump Sum Settlement Amount
+343,352,10,S9(7)V99,Employers Liability Paid to Date
+353,353,1,X(1),"Authorized Representative Indicator
+  1 = Yes
+  2 = No"
+354,354,1,X(1),"Controverted Case Indicator
+  1 = Yes
+  2 = No"
+355,355,1,X(1),"Deductible Indicator
+
+Policies prior to 1/1/96:
+  1 = Yes
+  2 = No
+
+Policies on/after 1/1/96:
+  0 = No Deductible Program
+  1 = Deductible amount fully recovered for net
+         reporting program
+  2 = Deductible amount not fully recovered for
+        net reporting program
+  3 = Gross Deductible Program"
+356,365,10,S9(7)V99,Product Liability Subrogation Recovered to Date
+366,375,10,S9(7)V99,Auto Liability Subrogation  Recovered to Date
+376,385,10,S9(7)V99,Other Subrogation Recovered to Date
+386,395,10,S9(7)V99,Employer Legal Expenses Paid to Date
+396,405,10,S9(7)V99,Claimant Legal Expenses Paid to Date
+406,415,10,S9(7)V99,Expert Witness Fees Paid to Date
+416,425,10,S9(7)V99,Penalties Paid to Date
+426,435,10,S9(7)V99,Allocated Loss Adjustment Expenses PTD 
+436,436,1,9(1),"Social Security Benefit Offset
+  1 = Yes
+  2 = No"
+437,437,1,9(1),"Unemployment Benefit Offset
+  1 = Yes
+  2 = No"
+438,438,1,9(1),"Pension Plan Benefit Offset
+  1 = Yes
+  2 = No"
+439,439,1,9(1),"Special Fund Benefit Offset
+  1 = Yes
+  2 = No"
+440,440,1,9(1),"Other Benefit Offset
+  1 = Yes
+  2 = No"
+441,442,2,9(2),"MCO Type 
+  00 = MCO Not Applicable
+  01 = MCO is Applicable But Not Specified
+  02 = HMO
+  03 = PPO
+  04 = EPO
+  05 = IPO
+  06 = Contract Medical"
+443,443,1,9(1),"Impairment % Basis Code
+  0 = Benefits not based on impairment %
+  1 = Impairment % based on whole body
+  2 = Impairment % based on part of body"
+444,444,1,X(1),"Medical Extinguishment Indicator
+  Y = Yes
+  N = No"
+445,445,1,X(1),"Return to Work Status Indicator
+  Y = Yes
+  N = No"
+446,446,1,X(1),"Extraordinary Loss Event Claim Indicator
+  Y = Yes
+  N = No"
+447,448,2,9(2),Lump Sum Settlement Benefit Type [1] (Appendix H)
+449,458,10,S9(7)V99,Lump Sum Settlement Amount Paid [1]
+459,460,2,9(2),Lump Sum Settlement Benefit Type [2]
+461,470,10,S9(7)V99,Lump Sum Settlement Amount Paid [2]
+471,472,2,9(2),Lump Sum Settlement Benefit Type [3]
+473,482,10,S9(7)V99,Lump Sum Settlement Amount Paid [3]
+483,484,2,9(2),Lump Sum Settlement Benefit Type [4]
+485,494,10,S9(7)V99,Lump Sum Settlement Amount Paid [4]
+495,496,2,9(2),Lump Sum Settlement Benefit Type [5]
+497,506,10,S9(7)V99,Lump Sum Settlement Amount Paid [5]
+507,508,2,9(2),Lump Sum Settlement Benefit Type [6]
+509,518,10,S9(7)V99,Lump Sum Settlement Amount Paid [6]
+519,528,10,S9(7)V99,Recovery Reimbursement Amount
+529,542,14,X(14),Filler
+543,543,1,9(1),"Fraudulent Claim Indicator (NA: NC, WI)
+  0 = Not Fraudulent
+  1 = Partially Fraudulent                                         
+  2 = Fully Fraudulent"
+544,551,8,CCYYMMDD,Date Application Filed (w/Appeals)
+552,559,8,CCYYMMDD,Date of Attorney Disclosure
+560,561,2,9(2),"Reserve Type Code
+  00 = Standard Reserve
+  01 = Stacked Estimate
+  02 = Volunteers
+  03 = Questionable Compensability
+  04 = Second Injury Fund Involvement
+  05 = Partial Dependency
+  06 = Still Exposed
+  07 = Last Exposed
+  08 = Stacked Award"
+562,565,4,CCYY,Year Last Exposed (Disease Claims Only)
+566,567,2,9(2),"Method of Settlement
+  00 = Claim Not Subject to Settlement
+  01 = Non Compensable Prev Alleged (Appl -DE,MA,MI,NM,PA
+  03 = Stipulated Award (Carrier/Settlement) (N/A: MA, NY) 
+  04 = Findings and Award (Judicial Award)
+        (N/A:  MA, NY)
+  05 = Dismissal or Take Nothing (Non-Compensable)
+  06 = Compromise (N/A:  MA, NY, PA, DE) 
+  07 = No Safety Devices(New Mexico Only), Other- CA only 
+  08 = Exemplary Damages (Appl - DE,MA,NJ,NM,PA)
+  09 = All Other Settlements (N/A: CA, NJ)
+  10 = Aggravation of Prior Work-Related Injuries (Maine Only)
+"
+568,574,7,X(7),Filler
+575,582,8,CCYYMMDD,Settlement Date
+583,583,1,9(1),"Beneficiary Code [1]
+  1 = Injured Worker
+  2 = Widow
+  3 = Widower
+  4 = Sons and Daughters
+  5 = Brothers and Sisters
+  6 = Mothers and Fathers
+  7 = Handicapped Child
+  9 = Other"
+584,584,1,X(1),"Beneficiary Dependency [1]
+  P = Partial
+  T = Total"
+585,585,1,9(1),"Beneficiary Gender [1]
+  1 = Male
+  2 = Female
+  3 = Unknown"
+586,593,8,CCYYMMDD,Beneficiary Date of Birth [1]
+594,594,1,9(1),Beneficiary Code [2]
+595,595,1,X(1),Beneficiary Dependency [2]
+596,596,1,9(1),Beneficiary Gender [2]
+597,604,8,CCYYMMDD,Beneficiary Date of Birth [2]
+605,605,1,9(1),Beneficiary Code [3]
+606,606,1,X(1),Beneficiary Dependency [3]
+607,607,1,9(1),Beneficiary Gender [3]
+608,615,8,CCYYMMDD,Beneficiary Date of Birth [3]
+616,616,1,9(1),Beneficiary Code [4]
+617,617,1,X(1),Beneficiary Dependency [4]
+618,618,1,9(1),Beneficiary Gender [4]
+619,626,8,CCYYMMDD,Beneficiary Date of Birth [4]
+627,627,1,9(1),Beneficiary Code [5]
+628,628,1,X(1),Beneficiary Dependency [5]
+629,629,1,9(1),Beneficiary Gender [5]
+630,637,8,CCYYMMDD,Beneficiary Date of Birth [5]
+638,645,8,S9(7),Annuity Purchased Amount
+646,653,8,S9(7),"Pension Indemnity Benefit Paid To Date
+  (Excluding Lump Sum Remarriage)"
+654,661,8,S9(7),Pension Indemnity Previously Reserved Not Paid
+662,669,8,S9(7),Present Value Future Indemnity Payments
+670,677,8,CCYYMMDD,Date of Spouse Remarriage
+678,685,8,S9(7),Lump Sum Remarriage Amount
+686,693,8,S9(7),Social Security of Other Benefit Offset Amount
+694,701,8,S9(7),Applicant's Medical Evaluation Paid to Date
+702,709,8,S9(7),Defense Medical Evaluation Paid to Date
+710,717,8,S9(7),Independent Medical Evaluation Paid
+718,721,4,9(4),Temporary Indemnity Number of Weeks
+722,729,8,S9(7),"Temporary Indemnity Incurred Loss
+  (Injury Type Code = 5)"
+730,732,3,9(3),Scheduled Indemnity Percent Disability [1]
+733,734,2,9(2),"Scheduled Indemnity Body Member Code [1]
+   (Appendix I)"
+735,738,4,9(4),Scheduled Indemnity Number of Weeks [1]
+739,746,8,S9(7),Scheduled Indemnity Incurred Loss [1]
+747,749,3,9(3),"Scheduled Indemnity Percent Disability [2]
+  (used when multiple body members are scheduled)"
+750,751,2,9(2),"Scheduled Indemnity Body Member Code [2]
+   (Appendix I)"
+752,755,4,9(4),Scheduled Indemnity Number of Weeks [2]
+756,763,8,S9(7),Scheduled Indemnity Incurred Loss [2]
+764,766,3,9(3),Non-Scheduled Indemnity Percent Disability
+767,774,8,S9(7),Non-Scheduled Indemnity Incurred Loss
+775,782,8,S9(7),Employers Liability or Other Loss Incurred
+783,790,8,S9(7),Single Sum Paid
+791,798,8,CCYYMMDD,Single Sum Paid Date
+799,800,2,9(2),Catastrophe Code
+801,801,1,X(1),"Vocational Rehab Indicator
+  N = Voc Re Costs not included in Incurred
+  Y = Voc Re Costs included in Incurred (Net)"
+802,802,1,X(1),"Initial Treatment
+  0 = Unknown (no value assigned)
+  1 = No Medical Treatment
+  2 = Minor on-site remedies by employer
+  3 = Minor clinic/hospital medical remedies
+         and diagnostic testing
+  4 = Emergency evaluation, diagnostic
+         testing, and medical procedures
+  5 = Hospitalization > 24 hours
+  6 = Future major medical/lost time 
+        anticipated"
+803,813,11,S9(8)V99,Carrier Total Gross Incurred
+814,829,16,X(16),Claim Internal Unique ID 
+830,831,2,9(2),"DCI Injury Code (Injury Type)
+00  Employer's Liability
+01  Death
+02  Permanent Total Disability
+03 CA & NJ – Major Permanent Partial Disability
+     FL – Wage Loss w/o Impairment (08/01/1979 - 12/31/1993
+     LA – Supplemental Earning Benefits and no PPD 
+     MI – Scheduled Partial Disability Benefits
+04 CA & NJ – Minor Permanent Partial Disability
+     FL – Wage Loss Impairment (08/01/1979 – 12/31/1993; 
+             Supplemental (01/01/1994 - 09/30/2003)
+     LA – Supplemental Earning Benefits and PPD Benefits
+     MI – Other Partial Disability
+05  Temporary Total or Temporary Partial Disability
+06  Medical Claims Only
+07  Contract Medical or Hospital Allowance - N/A: DE, MA, NJ, PA, and WI
+08  Compromised Death** – CA Only
+09  Permanent Partial Disability – Use for All States, except CA, MI, NJ
+      LA – PPD and No Supplemental Earnings Benefits 
+10  NY - Permanent Partial Disability — Scheduled Loss of Use (policies eff. on or after Jan.1, 2018.)
+11  NY - Permanent Partial Disability — Non-Scheduled (policies eff. on or after Jan.1, 2018.)"
+832,834,3,9(3),Disability/Loss of Earnings Capacity (LOEC) Percent
+835,835,1,9,Temporary Disability Benefit Extinguishment Code          
+836,845,10,S9(7)V99,Allocated Loss Adjustment Expense (ALAE) Paid
+846,850,5,9(5),Joint Coverage Percentage

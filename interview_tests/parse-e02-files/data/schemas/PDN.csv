@@ -1,0 +1,17 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type: PDN = Partial Denial Status
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),"Claim Number 
+(Unique ID = Claim Number, Vendor ID, Status Date, Status Time)"
+40,42,3,X(3),Vendor ID
+43,45,3,X(3),Processing Office
+46,57,12,x(12),Reason Code
+58,107,50,x(50),Reason Description
+108,115,8,CCYYMMDD,Partial Denial Date
+116,123,8,CCYYMMDD,Rescinded Date
+124,131,8,CCYYMMDD,Period Begin Date
+132,139,8,CCYYMMDD,Period End Date
+140,155,16,X(16),Partial Denial Unique ID
+156,171,16,X(16),Claim Internal Unique ID 

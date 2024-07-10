@@ -1,0 +1,24 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type:  CAR = Carrier Master
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account 
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),Claim Number
+40,42,3,X(3),Claim Vendor ID
+43,45,3,9(3),Processing Office
+46,48,3,X(3),MA Town Code
+49,49,1,X(1),"Partial/Total Loss Indicator
+P = Partial Loss
+T = Total Loss
+Blank Otherwise
+"
+50,59,10,X(10),ISO ASL Number
+60,259,200,X(200),ISO ASL Number Description
+260,269,10,X(10),ISO SubLine Code
+270,469,200,X(200),ISO SubLine Code Description
+470,475,6,X(6),ISO Class Code
+476,675,200,X(200),ISO Class Code Description
+676,678,3,X(3),ISO Coverage Code
+679,878,200,X(200),ISO Coverage Code Description
+879,880,2,X(2),ISO Type of Loss Code
+881,1080,200,X(200),ISO Type of Loss Code Description

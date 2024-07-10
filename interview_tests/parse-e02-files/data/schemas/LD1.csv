@@ -1,0 +1,185 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type: LD1 = Liability Detail 1
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),Claim Number 
+40,42,3,X(3),Vendor ID
+43,45,3,9(3),Processing Office
+46,65,20,X(20),Contact Name
+66,95,30,X(30),Contact Address 1
+96,125,30,X(30),Contact Address 2
+126,150,25,X(25),Contact City
+151,152,2,X(2),Contact State
+153,167,15,X(15),Contact Postal Code
+168,187,20,X(20),Contact Country
+188,205,18,X(18),Contact Home Phone
+206,223,18,X(18),Contact Work Phone
+224,227,4,X(4),Contact Work Extension
+228,252,25,X(25),"Authority Contacted (Police, Fire, etc.)"
+253,267,15,X(15),Report Number
+268,279,12,S9(9)V99,Insured Loss/Damage Estimate
+280,309,30,X(30),Owner/Manufacturer Name
+310,339,30,X(30),Owner/Manufacturer Address1 (Address2 is below)
+340,359,20,X(20),Owner/Manufacturer City
+360,361,2,X(2),Owner/Manufacturer State
+362,376,15,X(15),Owner/Manufacturer Postal Code
+377,396,20,X(20),Owner/Manufacturer Country
+397,414,18,X(18),Owner/Manufacturer Phone Number
+415,439,25,X(25),Violations or Citations Issued
+440,440,1,X(1),"Vehicle Lien
+  Y = Yes
+  N = No"
+441,448,8,X(8),Vehicle Fleet ID
+449,454,6,X(6),Vehicle Plate Number
+455,456,2,X(2),Vehicle Plate State
+457,471,15,X(15),Purpose of Use
+472,472,1,X(1),"Permissive Use
+  Y = Yes
+  N = No"
+473,492,20,X(20),Vehicle Damage Description
+493,522,30,X(30),Vehicle Driver Name
+523,552,30,X(30),Vehicle Driver Address
+553,572,20,X(20),Vehicle Driver City
+573,574,2,X(2),Vehicle Driver State
+575,589,15,X(15),Vehicle Driver Postal Code
+590,609,20,X(20),Vehicle Driver Country
+610,627,18,X(18),Vehicle Driver Phone Number
+628,637,10,X(10),Vehicle Driver Relation to Insured
+638,645,8,CCYYMMDD,Vehicle Driver Date of Birth
+646,685,40,X(40),Description of Other Vehicle/Property
+686,686,1,X(1),"Other Vehicle/Property Insured
+  Y = Yes
+  N = No"
+687,706,20,X(20),Other Vehicle/Property Damage Description
+707,714,8,9(8),Other Vehicle/Property Damage Estimate
+715,744,30,X(30),Other Vehicle/Property Owner Name
+745,774,30,X(30),Other Vehicle/Property Owner Address
+775,794,20,X(20),Other Vehicle/Property Owner City
+795,796,2,X(2),Other Vehicle/Property Owner State
+797,811,15,X(15),Other Vehicle/Property Owner Postal Code
+812,831,20,X(20),Other Vehicle/Property Owner Country
+832,849,18,X(18),Other Vehicle/Property Owner Phone Number
+850,879,30,X(30),Other Vehicle/Property Driver Name
+880,909,30,X(30),Other Vehicle/Property Driver Address
+910,929,20,X(20),Other Vehicle/Property Driver City
+930,931,2,X(2),Other Vehicle/Property Driver State
+932,946,15,X(15),Other Vehicle/Property Driver Postal Code
+947,966,20,X(20),Other Vehicle/Property Driver Country
+967,984,18,X(18),Other Vehicle/Property Driver Phone Number
+985,992,8,X(8),"Type of Liability
+  Premises
+  Products"
+993,1004,12,X(12),"Insured
+  Owner
+  Tenant
+  Manufacturer
+  Vendor
+  Other"
+1005,1024,20,X(20),Premises/Product/Property Type
+1025,1064,40,X(40),Other Liability (inc. Completed Operations)
+1065,1081,17,X(17),Product/Property Model
+1082,1098,17,X(17),Product/Property Serial Number
+1099,1106,8,CCYYMMDD,Product/Property Manufacture Date
+1107,1121,15,X(15),"Kind of Property Loss (Fire, Wind, Explosion, etc.)"
+1122,1122,1,X(1),"Mortgagee Exists
+  Y = Yes
+  N = No"
+1123,1152,30,X(30),Mortgagee 
+1153,1153,1,X(1),"Claimant is a Minor
+  Y = Yes
+  N = No"
+1154,1162,9,X(9),Vehicle Driver SSN
+1163,1170,8,CCYYMMDD,Vehicle Driver Date of Hire
+1171,1185,15,X(15),Vehicle Driver Occupation
+1186,1190,5,X(5),ISO Catastrophe Code
+1191,1220,30,X(30),Vehicle Driver Address 2
+1221,1238,18,X(18),Vehicle Driver Work Phone
+1239,1253,15,X(15),Vehicle Driver Drivers License Number
+1254,1283,30,X(30),Owner/Manufacturer Address2 (Address1 is above)
+1284,1301,18,X(18),Owner/Manufacturer Home Phone
+1302,1302,1,X(1),"First Party Vehicle Type
+O = Owned/Leased
+R = Rental
+B = Borrowed
+C = Company"
+1303,1303,1,X(1),"First Party Vehicle Drivable?
+Y = Yes
+N = No"
+1304,1333,30,X(30),First Party Vehicle Address Line 1 (where vehicle located)
+1334,1363,30,X(30),First Party Vehicle Address Line 2
+1364,1388,25,X(25),First Party Vehicle City
+1389,1390,2,X(2),First Party Vehicle State
+1391,1405,15,X(15),First Party Vehicle Zip Code
+1406,1406,1,X(1),"First Party Driver Citations Issued?
+Y = Yes
+N = No"
+1407,1436,30,X(30),First Party Driver Citation Issued By
+1437,1442,6,X(6),First Party Driver Citation Number
+1443,1462,20,X(20),Description of the Property Damage
+1463,1463,1,X(1),"Any vehicles towed?
+Y = Yes
+N = No"
+1464,1478,15,X(15),When to Contact
+1479,1493,15,X(15),Reported By
+1494,1533,40,X(40),Insured Vehicle Location
+1534,1535,2,9(2),"Cargo Conveyance Code
+  1 = Vessel  
+  2 = Truck 
+  3 = Air  
+  4 = Storage   
+  5 = Railroad"
+1536,1538,3,9(3),Vehicle Count (Number of vehicles involved in the accident)
+1539,1540,2,9(2),"Auto Description - 1st Party
+1=Passenger Car
+2=Van
+3=SUV
+4=Pickup Truck
+5=Tractor/Trailer
+6=Motorcycle
+7=Other"
+1541,1556,16,X(16),Claim Internal Unique ID 
+1557,1756,200,X(200),Extended Product Name
+1757,1761,5,x(5),Department Code
+1762,1811,50,x(50),Department Description
+1812,1826,15,x(15),FF Model
+1827,1841,15,x(15),Base Model Number
+1842,1846,5,X(5),Product Line Code
+1847,1896,50,x(50),Product Line Description
+1897,1901,5,x(5),Manufacturing Site Code
+1902,1951,50,x(50),Manufacturing Site Description
+1952,1956,5,x(5),Model Group Code
+1957,2006,50,x(50),Model Group Description
+2007,2011,5,x(5),Brand Code
+2012,2061,50,x(50),Brand Description
+2062,2069,8,CCYYMMDD,Manufacturing Start Date
+2070,2077,8,CCYYMMDD,Manufacturing End Date
+2078,2087,10,x(10),Evidence Preservation
+2088,2095,8,x(8),Vehicle Plate Number
+2096,2096,1,x(1),Total Loss Indicator
+2097,2108,12,S9(9)V99,Actual Cash Value
+2109,2120,12,S9(9)V99,Car Seat Replacement Costs
+2121,2132,12,S9(9)V99,Storage Fees
+2133,2144,12,S9(9)V99,Towing Fees
+2145,2156,12,S9(9)V99,Tax
+2157,2168,12,S9(9)V99,Title
+2169,2180,12,S9(9)V99,Registration/Licensing Fees
+2181,2192,12,S9(9)V99,Other
+2193,2204,12,S9(9)V99,Total Loss Worksheet Total
+2205,2216,12,S9(9)V99,Less Retained Salvage
+2217,2219,3,999,Percentage
+2220,2231,12,S9(9)V99,Total Loss
+2232,2241,10,x(10),Is Total Loss a Result of Theft?
+2242,2251,10,x(10),Is Owner Retaining Salvage?
+2252,2263,12,S9(9)V99,Estimated Salvage Value
+2264,2275,12,S9(9)V99,Estimated Cost to Repair
+2276,2345,70,x(70),Salvage Company
+2346,2415,70,x(70),Salvage Lot/Stock Number
+2416,2485,70,x(70),Legal Hold on Property at Salvage Yard?
+2486,2555,70,x(70),Lienholder on Property?
+2556,2625,70,x(70),Lienholder Name
+2626,2695,70,x(70),Lienholder Account Number
+2696,2765,70,x(70),Name of Location for Property Pickup
+2766,2835,70,x(70),Address of Location for Property Pickup
+2836,2905,70,x(70),Phone Number of Location for Property Pickup
+2906,2913,8,CCYYMMDD,Date Legal Hold Placed on Property

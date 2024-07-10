@@ -1,0 +1,19 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type:  NOT = Claim Notes
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account 
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),Claim Number
+40,42,3,X(3),Claim Vendor ID
+43,45,3,9(3),Processing Office
+46,47,2,9(2),"Record Sequence
+    (for note text exceeding 1200)"
+48,55,8,X(8),Examiner
+56,63,8,X(8),User Entering Note
+64,71,8,CCYYMMDD,Date Entered
+72,77,6,HHMMSS,Time Entered 
+78,79,2,X(2),Note Type     (Appendix J)
+80,1279,1200,X(1200),Note Text
+1280,1295,16,X(16),Note Internal Unique ID
+1296,1296,1,Y/N,"Is this a sensitive note? (Effective June 13, 2015)"
+1297,1312,16,X(16),Claim Internal Unique ID 

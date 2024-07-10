@@ -1,0 +1,34 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type: IBC= Insurance Bureau Canada
+4,7,4,X(4),Sedgwick CMS Client ID
+8,15,8,X(8),Sedgwick CMS Client Account 
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),Claim Number
+40,42,3,X(3),Claim Vendor ID (originator of claim number)
+43,45,3,X(3),Processing Office
+46,48,3,X(3),Statistical Territory
+49,50,2,X(2),Kind of Loss Code
+51,54,4,X(4),Claim Coverage Code
+55,55,1,X(1),AB Catastrophic
+56,56,1,X(1),AB Minor Injury
+57,81,25,X(25),TP Driver Surname
+82,101,20,X(20),TP Driver Fname
+102,121,20,X(20),TP Driver Mname
+122,124,3,X(3),Company ID
+125,125,1,X(1),Third Party Vehicle Utilization Type
+126,145,20,X(20),Policy Identification Number
+146,146,1,X(1),Basis of Claim Code
+147,149,3,X(3),Event Category Code
+150,152,3,X(3),Postal Code
+153,154,2,X(2),Type of use 
+155,179,25,X(25),FP Driver Surname
+180,199,20,X(20),FP Driver Fname
+200,219,20,X(20),FP Driver Mname
+220,222,3,X(3),First Party Vehicle Type
+223,224,2,X(2),Province Code
+225,227,3,X(3),First Party Percent Fault
+228,230,3,X(3),Third Party Percent Fault
+231,238,8,X(8),Legal Reserve
+239,249,11,X(11),Claimant Annual Income
+250,265,16,X(16),IBC Internal unique ID
+266,281,16,X(16),Claim Internal unique ID

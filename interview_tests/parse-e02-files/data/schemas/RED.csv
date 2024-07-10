@@ -1,0 +1,17 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type:  RED = Reimbursement Allocations
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account 
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),Claim Number
+40,42,3,X(3),Claim Vendor ID
+43,45,3,9(3),Processing Office
+46,57,12,S9(9)V99,Reimbursement To Date  Total
+58,69,12,S9(9)V99,Reimbursement to Date   Indemnity
+70,81,12,S9(9)V99,Reimbursement to Date   Medical
+82,93,12,S9(9)V99,Reimbursement to Date   Expense/Other
+94,105,12,S9(9)V99,Reimbursed in Period   Total
+106,117,12,S9(9)V99,Reimbursed in Period   Indemnity
+118,129,12,S9(9)V99,Reimbursed in Period  Medical
+130,141,12,S9(9)V99,Reimbursed in Period  Expense/Other
+142,157,16,X(16),Claim Internal Unique ID 
