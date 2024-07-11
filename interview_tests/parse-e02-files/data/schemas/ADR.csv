@@ -1,0 +1,44 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type: ADR = Address
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account 
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),Claim Number 
+40,42,3,X(3),Vendor ID
+43,45,3,9(3),Processing Office
+46,50,5,9(3),Address Number
+51,53,3,X(3),"Address Type
+   (See Appendix P For List of Values)"
+54,62,9,9(9),Tax Id
+63,65,3,9(3),Tax Sub
+66,66,1,X(1),"Name Type
+   I = Individual
+  O = Organization (Last Name + First Name)"
+67,91,25,X(25),Last Name
+92,111,20,X(20),First Name
+112,121,10,X(10),Title
+122,151,30,X(30),Address Line 1
+152,181,30,X(30),Address Line 2
+182,206,25,X(25),City
+207,208,2,X(2),State
+209,223,15,X(15),Postal Code
+224,243,20,X(20),Country
+244,261,18,X(18),Phone Number 1
+262,265,4,X(4),Filler  
+266,283,18,X(18),Phone Number 2
+284,287,4,X(4),Filler
+288,305,18,X(18),Fax Number
+306,335,30,X(30),Email Address
+336,375,40,X(40),Contact
+376,383,8,CCYYMMDD,Best Contact Date
+384,387,4,HHMM,Best Contact Time
+388,437,50,X(50),Comment
+438,438,1,X(1),"Authorized
+   Y = Yes
+   N = No"
+439,446,8,CCYYMMDD,Authorized Begin Date
+447,454,8,CCYYMMDD,Authorized End Date
+455,461,7,X(7),Phone Number 1 Extension 
+462,468,7,X(7),Phone Number 2 Extension 
+469,484,16,X(16),Address Record Internal Unique ID
+485,500,16,X(16),Claim Internal Unique ID 
