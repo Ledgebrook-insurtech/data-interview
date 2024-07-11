@@ -1,0 +1,81 @@
+start,stop,length,format,description
+1,3,3,X(3),Record Type: REC = Recovery Summary
+4,7,4,9(4),Sedgwick CMS Client ID
+8,15,8,9(8),Sedgwick CMS Client Account 
+16,21,6,X(6),Sedgwick CMS Client Location
+22,39,18,X(18),Claim Number 
+40,42,3,X(3),Vendor ID
+43,45,3,9(3),Processing Office
+46,58,13,S9(10)V99,Excess Recovered to Date
+59,71,13,S9(10)V99,Excess RTD-Loss/Indemnity
+72,84,13,S9(10)V99,Excess RTD-Medical   (WC only)
+85,97,13,S9(10)V99,Excess RTD-Other Expense   (WC only)
+98,110,13,S9(10)V99,Excess RTD-Expense
+111,123,13,S9(10)V99,Excess Recovered Current Period
+124,136,13,S9(10)V99,Excess RCP-Loss/Indemnity
+137,149,13,S9(10)V99,Excess RCP-Medical   (WC only)
+150,162,13,S9(10)V99,Excess RCP-Other Expense   (WC only)
+163,175,13,S9(10)V99,Excess RCP-Expense
+176,188,13,S9(10)V99,Special Fund Recovered to Date
+189,201,13,S9(10)V99,Special Fund RTD-Loss/Indemnity
+202,214,13,S9(10)V99,Special Fund RTD-Medical   (WC only)
+215,227,13,S9(10)V99,Special Fund RTD-Other Expense   (WC only)
+228,240,13,S9(10)V99,Special Fund RTD-Expense
+241,253,13,S9(10)V99,Special Fund Recovered Current Period
+254,266,13,S9(10)V99,Special Fund RCP-Loss/Indemnity
+267,279,13,S9(10)V99,Special Fund RCP-Medical   (WC only)
+280,292,13,S9(10)V99,Special Fund RCP-Other Expense   (WC only)
+293,305,13,S9(10)V99,Special Fund RCP-Expense
+306,318,13,S9(10)V99,Contribution Recovered to Date   (WC only)
+319,331,13,S9(10)V99,Contribution RTD-Indemnity   (WC only)
+332,344,13,S9(10)V99,Contribution RTD-Medical   (WC only)
+345,357,13,S9(10)V99,Contribution RTD-Other Expense   (WC only)
+358,370,13,S9(10)V99,Contribution RTD-Expense   (WC only)
+371,383,13,S9(10)V99,Contribution Recovered Current Period      
+384,396,13,S9(10)V99,Contribution RCP-Indemnity   (WC only)
+397,409,13,S9(10)V99,Contribution RCP-Medical   (WC only)
+410,422,13,S9(10)V99,Contribution RCP-Other Expense   (WC only)
+423,435,13,S9(10)V99,Contribution RCP-Expense   (WC only)
+436,448,13,S9(10)V99,Subrogation Recovered to Date
+449,461,13,S9(10)V99,Subrogation RTD-Loss/Indemnity
+462,474,13,S9(10)V99,Subrogation RTD-Medical   (WC only)
+475,487,13,S9(10)V99,Subrogation RTD-Other Expense   (WC only)
+488,500,13,S9(10)V99,Subrogation RTD-Expense
+501,513,13,S9(10)V99,Subrogation Recovered Current Period
+514,526,13,S9(10)V99,Subrogation RCP-Loss/Indemnity
+527,539,13,S9(10)V99,Subrogation RCP-Medical   (WC only)
+540,552,13,S9(10)V99,Subrogation RCP-Other Expense   (WC only)
+553,565,13,S9(10)V99,Subrogation RCP-Expense
+566,578,13,S9(10)V99,Deductible Recovered to Date
+579,591,13,S9(10)V99,Deductible RTD-Loss/Indemnity
+592,604,13,S9(10)V99,Deductible RTD-Medical   (WC only)
+605,617,13,S9(10)V99,Deductible RTD-Other Expense   (WC only)
+618,630,13,S9(10)V99,Deductible RTD-Expense
+631,643,13,S9(10)V99,Deductible Recovered Current Period
+644,656,13,S9(10)V99,Deductible RCP-Loss/Indemnity
+657,669,13,S9(10)V99,Deductible RCP-Medical   (WC only)
+670,682,13,S9(10)V99,Deductible RCP-Other Expense   (WC only)
+683,695,13,S9(10)V99,Deductible RCP-Expense
+696,708,13,S9(10)V99,Salvage Recovered to Date
+709,721,13,S9(10)V99,Salvage RTD-Loss   (Liab only)
+722,734,13,S9(10)V99,Salvage RTD-Expense    (Liab only)
+735,747,13,S9(10)V99,Salvage Recovered Current Period    (Liab only)
+748,760,13,S9(10)V99,Salvage RCP-Loss    (Liab only)
+761,773,13,S9(10)V99,Salvage RCP-Expense    (Liab only)
+774,786,13,S9(10)V99,Legal Recovered to Date    (Liab only)
+787,799,13,S9(10)V99,Legal RTD-Loss    (Liab only)
+800,812,13,S9(10)V99,Legal RTD-Expense    (Liab only)
+813,825,13,S9(10)V99,Legal Recovered Current Period    (Liab only)
+826,838,13,S9(10)V99,Legal RCP-Loss    (Liab only)
+839,851,13,S9(10)V99,Legal RCP-Expense    (Liab only)
+852,864,13,S9(10)V99,Other Recovered to Date
+865,877,13,S9(10)V99,Other RTD-Loss/Indemnity
+878,890,13,S9(10)V99,Other RTD-Medical   (WC only)
+891,903,13,S9(10)V99,Other RTD-Other Expense   (WC only)
+904,916,13,S9(10)V99,Other RTD-Expense
+917,929,13,S9(10)V99,Other Recovered Current Period
+930,942,13,S9(10)V99,Other RCP-Loss/Indemnity
+943,955,13,S9(10)V99,Other RCP-Medical   (WC only)
+956,968,13,S9(10)V99,Other RCP-Other Expense   (WC only)
+969,981,13,S9(10)V99,Other RCP-Expense
+982,997,16,X(16),Claim Internal Unique ID 
