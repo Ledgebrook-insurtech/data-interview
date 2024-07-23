@@ -68,9 +68,6 @@ test: venv  ## run all tests with pytest
 run: venv  ## run dag's scripts
 	DEBUG=${DEBUG:-False} ${USE_VENV} python3 src
 
-.PHONY: build-and-run
-build-and-run: build run ## build and run dag's scripts locally
-
 
 .PHONY: help
 help: ## Display this help screen
