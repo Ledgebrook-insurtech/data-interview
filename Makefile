@@ -36,7 +36,7 @@ export DEPLOY_IMAGE_URL
 export LATEST_IMAGE_URL
 
 venv:  ## create Python venv, install poetry, black, pylint, and pytest
-	cd $(DAG_DIR) && ${PYTHON3} -m venv venv
+	cd $(INTERVIEW_TYPE_DIR) && ${PYTHON3} -m venv venv
 	${USE_VENV} pip3 install --upgrade pip
 
 
@@ -64,30 +64,9 @@ test: venv  ## run all tests with pytest
 	poetry run pytest ${TEST_DIR}
 
 
-.PHONY: build
-build: ## build docker image based on current working copy
-	docker buildx build \
-		--platform linux/amd64 \
-		--tag "${BUILD_IMAGE_URL}" \
-		--build-arg INTERVIEW_TYPE=${INTERVIEW_TYPE} \
-		--file ${INTERVIEW_TYPE_DIR}/Dockerfile \
-		.
-
-
 .PHONY: run
-run:  ## run dag's scripts
-	docker-compose -f ${INTERVIEW_TYPE_DIR}/docker-compose.yml \
-		run ${INTERVIEW_TYPE} /bin/bash -c 'python3 src'
-
-
-.PHONY: run-bash
-run-bash:  ## run bash in the container
-	docker-compose -f ${INTERVIEW_TYPE_DIR}/docker-compose.yml \
-		run ${INTERVIEW_TYPE} /bin/bash
-
-
-.PHONY: build-and-run
-build-and-run: build run ## build and run dag's scripts locally
+run: venv  ## run dag's scripts
+	DEBUG=${DEBUG:-False} ${USE_VENV} python3 src
 
 
 .PHONY: help
