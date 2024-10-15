@@ -5,10 +5,19 @@
 As a Data Engineer, if you've never had the opportunity
 to parse an e02 file, you're in for a treat!
 
-## Starting Point
+## Install
 
-To execute your code, run `make build-and-run INTERVIEW_TYPE=parse-e02-files` at
-the root of the repo. This will build the Docker image and run the container.
+```bash
+make install INTERVIEW_TYPE=parse-e02-files
+```
+
+## Run
+
+```bash
+make run INTERVIEW_TYPE=parse-e02-files
+```
+
+## Starting Point
 
 A `ParseE02` (`src/parse_e02.py`) class has been initialized for you, which loads
 the e02 file (`data/e029924d.012924`) and schema(s) (`data/schemas`).

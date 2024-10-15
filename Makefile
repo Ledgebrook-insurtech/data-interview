@@ -42,8 +42,7 @@ venv:  ## create Python venv, install poetry, black, pylint, and pytest
 
 .PHONY: install
 install: venv ## install all required packages (will also create venv)
-	${USE_VENV} pip3 install --no-cache-dir poetry
-	${USE_VENV} poetry install
+	${USE_VENV} pip3 install -r requirements.txt -r ../../requirements-dev.txt
 
 
 .PHONY: format
